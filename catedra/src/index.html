@@ -7,95 +7,157 @@
     <script src="/catedra/src/hola.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <title>DEVCAPS</title>
-    
 </head>
 <body>
     <h1>DEVCAPS</h1>
 
     <div class="sidebar">
-        <a href="#pagina principal"> pagina principal</a>
-        <a href="catologo"> catologo</a>
-        <a href="#conoce los descuentos"><i class="bi bi-fire"></i> conoce los descuentos</a>
-        <a href="#carrito de compras"><i class="bi bi-cart2"></i> carrito de compras</a>
-        <a href="#contacto"><i class="bi bi-file-person-fill"></i>Contacto</a>
+        <a href="javascript:void(0)" onclick="mostrarSeccion('inicio')">Inicio</a>
+        <a href="javascript:void(0)" onclick="mostrarSeccion('productos')">Productos</a>
+        <a href="javascript:void(0)" onclick="mostrarSeccion('acerca')">Acerca de nosotros</a>
+        <a href="javascript:void(0)" onclick="mostrarSeccion('contacto')">Contacto</a>
+        <a href="javascript:void(0)" onclick="mostrarSeccion('carrito')">Carrito de compras</a>
+        <a href="javascript:void(0)" onclick="mostrarSeccion('login')">Login</a>
     </div>
 
-    
     <div class="main-content">
-     
         <section id="inicio" class="section">
-            <p><strong>Bienvenido a DEVCAPS una tienda donde encontraras todo tipo de estilos de gorras y mas.</strong></p>
-            <img src ="/catedra/imagenes/gorra.webp">
-
+            <p><strong>Bienvenido a DEVCAPS, una tienda donde encontrarás todo tipo de estilos de gorras y más.</strong></p>
+            <img src="imagenes/gorra.webp" alt="Gorra Principal" style="width: 900px;" height="450px">
         </section>
-        <div class="row-fluid m-bottom-half-xs m-section-bottom">
-            <div class="span8 offset2">
-                <div class="subtitle-paragraph m-bottom">
-                    <p>Te mostramos los productos destacados de la marca. Puedes encontrar todos los
-                        productos ingresando desde el menú principal.</p>
+
+        <section id="productos" class="section">
+            <h2>Productos</h2>
+            <div class="contenedor-productos">
+                <div class="productos">
+                    <img src="imagenes/1.webp" alt="Gorra Gallo">
+                    <h3>Gorra Gallo</h3>
+                    <p>250000$</p>
+                    <button class="producto-agregar">Agregar</button>
+                </div>
+                <div class="productos">
+                    <img src="imagenes/2.webp" alt="Gorra Pantera">
+                    <h3>Gorra Pantera</h3>
+                    <p>250000$</p>
+                    <button class="producto-agregar">Agregar</button>
+                </div>
+                <div class="productos">
+                    <img src="imagenes/3.webp" alt="Gorra Rana">
+                    <h3>Gorra Rana</h3>
+                    <p>350000$</p>
+                    <button class="producto-agregar">Agregar</button>
+                </div>
+                <div class="productos">
+                    <img src="imagenes/1.webp" alt="Gorra Gallo">
+                    <h3>Gorra Gallo</h3>
+                    <p>250000$</p>
+                    <button class="producto-agregar">Agregar</button>
+                </div>
+                <div class="productos">
+                    <img src="imagenes/2.webp" alt="Gorra Pantera">
+                    <h3>Gorra Pantera</h3>
+                    <p>250000$</p>
+                    <button class="producto-agregar">Agregar</button>
+                </div>
+                <div class="productos">
+                    <img src="imagenes/3.webp" alt="Gorra Rana">
+                    <h3>Gorra Rana</h3>
+                    <p>350000$</p>
+                    <button class="producto-agregar">Agregar</button>
                 </div>
             </div>
-        </div>
-    
-        
+<br>
+            
+            <div class="contenedor-productos">
+                <h3 class="titulo-principal">Descuentos</h3>
+                
+                <div class="productos">
+                    <img class="imagenes" src="imagenes/w merch 1.webp" alt="">
+                    <h3 class="producto-titulo">Gorra Edición Especial</h3>
+                    <p class="producto-precio"> Antes: <del>$200000</del> <br> Ahora: <strong>$180000</strong></p>
+                    <button class="producto-agregar">Agregar</button>
+                </div>
+                <div class="productos">
+                    <img class="imagenes" src="imagenes/w merch 2.webp" alt="">
+                    <h3 class="producto-titulo">Bandana W Merch</h3>
+                    <p class="producto-precio">250000$</p>
+                    <button class="producto-agregar">Agregar</button>
+                </div>
+            </div>
         </section>
-<main>
-    <h2 class="titulo-principal"> catalogo </h2>
-    <div class="contenedor-productos">
-        <div class="productos">
-            <img class="imagenes"src="/catedra/imagenes/1.webp"alt="">
-            <h3 class="producto-titulo">Gorra Gallo</h3>
-            <p class="producto-precio"> 250.000$ </p>
-            <button class="producto-agregar">agregar</button>
-        </div>
 
-            <div class="productos">
-        <img class="imagenes"src="/catedra/imagenes/2.webp"alt="">
-        <h3 class="producto-titulo">Gorra Pantera</h3>
-            <p class="producto-precio"> 250.000$ </p>
-            <button class="producto-agregar">agregar</button>
+        <section id="acerca" class="section">
+            <h2>Acerca de Nosotros</h2>
+            <p class="parrafo-nosotros">Somos <samp class="idk">DEVCAPS</samp>, una tienda especializada en ofrecer una amplia variedad de gorras de alta calidad, diseñadas para satisfacer los gustos y necesidades de cada persona. En <samp class="idk">DEVCAPS</samp>, no solo nos enfocamos en brindar productos excepcionales, sino también en proporcionar un estilo único y moderno para todos aquellos que buscan destacar con un accesorio práctico y de tendencia.
+                Nuestro catálogo incluye una extensa selección de gorras, desde las más clásicas hasta las más vanguardistas, para hombres, mujeres y niños. Ya sea que prefieras un diseño minimalista, uno más atrevido o una pieza que combine con tu estilo urbano, en<samp class="idk">DEVCAPS</samp> encontrarás lo que necesitas. Trabajamos con marcas reconocidas y también ofrecemos productos exclusivos que no encontrarás en otras tiendas.
+                Además de la calidad de nuestros productos, en <samp class="idk">DEVCAPS</samp> nos preocupamos por la comodidad y el ajuste perfecto. Cada una de nuestras gorras está cuidadosamente diseñada para adaptarse a diferentes tipos de cabeza, garantizando un ajuste cómodo durante todo el día. Ya sea que estés buscando protección contra el sol, un accesorio para complementar tu look o simplemente una gorra para el día a día, <samp class="idk">DEVCAPS</samp> es tu destino ideal.
+                En <samp class="idk">DEVCAPS</samp>, nos enorgullece ofrecer un excelente servicio al cliente. Nos comprometemos a brindarte una experiencia de compra fácil, rápida y segura. Además, nuestro equipo está siempre dispuesto a ayudarte a encontrar la gorra perfecta, ya sea que la necesites para una ocasión especial o para uso cotidiano.Visítanos y descubre por qué somos la tienda preferida por aquellos que buscan calidad, estilo y variedad. En <samp class="idk">DEVCAPS</samp>, tenemos la gorra perfecta para ti, porque entendemos que cada persona es única, y su estilo también lo es.</p>
+        </section>
+
+        <section id="contacto" class="section">
+            <div>
+                <fieldset class="dc">
+                    <legend><b>Datos de contacto</b></legend>
+                    <footer>
+                        <ul class="datos-contacto">
+                            <li><b>Celulares de contacto:</b> <b><samp class="numeros">+57 319 7083230</samp></b> y/o <b><samp class="numeros">+57 302 2163398</samp></b></li>
+                            <br>
+                            <li><b>Direcciones de correo:</b> <b><samp class="correos">carlos-frutog@unilibre.edu.co</samp></b>  y/o <b><samp class="correos">davide-escamillag@unilibre.edu.co</samp></b> </li>
+                        </ul>
+                    </footer>
+                </fieldset>
+            <div>
+                <fieldset class="es">
+                    <legend><b>Redes Sociales</b></legend>
+                    <footer>
+                        <ul class="redes">
+                            <li><a class="link_instagram" href="https://www.instagram.com/" target="_blank"> <img src="imagenes/instagram.png" alt="Instagram" class="iconoins">Instagram</a></li>
+                            <li><a class="link_facebook" href="https://www.facebook.com/" target="_blank"><img src="imagenes/facebook.png" alt="Facebook" class="iconoface">Facebook</a></li>
+                            <li><a class="link_whatsapp" href="https://api.whatsapp.com/send?phone=573197083230" target="_blank"><img src="imagenes/social.png" alt="Whatsapp" class="iconowha">Whatsapp</a></li>
+                        </ul> 
+                    </footer>
+                </fieldset>
+            </div>
+            <div>
+                <fieldset class="co">
+                    <legend><b>Contacto</b></legend>
+                    <form id="contactForm">
+                        <label for="name">Nombre:</label>
+                        <input type="text" id="name" name="name" required placeholder="Escriba su nombre">
+                        <br>
+                        <label for="email">Correo:</label>
+                        <input type="email" id="email" name="email" required placeholder="Escriba su correo">
+                        <br>
+                        <button type="submit">Enviar</button>
+                    </form>
+                </fieldset>
+            </div>
+        </section>
+
+        <section id="carrito" class="section">
+            <h2>Carrito de Compras</h2>
+            <p>Aquí puedes gestionar los productos que has agregado a tu carrito.</p>
+        </section>
+
+        <section id="login" class="section">
+            <h2 class="login-usuario">Login del usuario</h2>
+            <img class="login" src="imagenes/pngwing.com.png" alt="Login">
+            <form>
+                <li class="usuarios">
+                    <label class="usuario" for="usuario">Nombre</label><br>
+                    <input class="usu" type="email" name="email" required placeholder="Ingrese usuario">
+                </li>
+                <li class="contraseñas">
+                    <label class="contraseña">Contraseña</label><br>
+                    <input class="con" type="password" name="password" required minlength="8" placeholder="Ingrese contraseña">
+                </li>
+                <input class="boton" type="submit" value="Iniciar Sesión">
+            </form>
+        </section>
     </div>
 
-    <div class="productos">
-        <img class="imagenes"src="/catedra/imagenes/3.webp"alt="">
-        <h3 class="producto-titulo">Gorra Rana</h3>
-            <p class="producto-precio"> 350.000$ </p>
-            <button class="producto-agregar">agregar</button>
-</div>
-    </div>
-    
-    <h3 class="titulo-principal"> Descuento </h3>
-    <div class="contenedor-productos">
-        <div class="productos">
-            <img class="imagenes"src="/catedra/imagenes/w merch 1.webp"alt="">
-            <h3 class="producto-titulo">Gorra Edicion Especial</h3>
-            <p class="producto-precio"> 200.000$ <strong> 10% OFF </strong></p>
-            <button class="producto-agregar">agregar</button>
-        </div>
-        <div class="productos">
-            <img class="imagenes"src="/catedra/imagenes/w merch 2.webp"alt="">
-            <h3 class="producto-titulo">Bandana W Merch</h3>
-                <p class="producto-precio"> 250.000$ </p>
-                <button class="producto-agregar">agregar</button>
-        </div>  
-
-        <div class="productos">
-            <img class="imagenes"src="/catedra/imagenes/w merch 3.jfif"alt="">
-            <h3 class="producto-titulo">Gorra W Merch</h3>
-                <p class="producto-precio"> 250.000$ </p>
-                <button class="producto-agregar">agregar</button> 
-</div>
-    </div>
-    
-
-</main>
-        <footer>
-            <p><strong>Developers y colaboradores:</strong></p>
-            <p>3022163398 | Universidad Libre Barranquilla</p>
-            <p>David Escamilla</p>
-        </footer>
-    </div>
-
-
+    <footer class="dev">
+        <p><strong>Developers y colaboradores:</strong> David Escamilla y Carlos Fruto</p>
+    </footer>
 </body>
 </html>
