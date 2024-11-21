@@ -87,7 +87,6 @@ section.active {
   flex: 1 1 calc(25% - 40px); 
   max-width: 300px; 
   box-sizing: border-box; 
-  
 }
 
 .productos img {
@@ -109,7 +108,7 @@ footer {
   margin-top: 20px;
 }
 
-.login{
+.login {
   margin: 20px;
   margin-left: 385px;
   padding: 0;
@@ -117,21 +116,20 @@ footer {
   width: 138px;
 }
 
-
-.usuarios{
+.usuarios {
   position: relative;
   left: 350px;
   list-style: none;
 }
 
-.contraseñas{
+.contraseñas {
   position: relative;
   left: 340px;
   list-style: none;
   margin: 10px;
 }           
 
-.boton{
+.boton {
   position: relative;
   left: 350px;
   margin: 10px;
@@ -142,16 +140,16 @@ footer {
   background: #b40505;
   color: white;
   cursor: pointer;
-  
 }
-.usu{
+
+.usu {
   border: 2px solid black;
   border-radius: 3px;
   width: 200px;
   height: 20px;
 }
 
-.con{
+.con {
   border: 2px solid black;
   border-radius: 3px;
   width: 200px;
@@ -172,7 +170,6 @@ footer {
   border-color: #b40505; 
 }
 
-
 .gorra-principal {
   display: block;
   width: 100%;
@@ -183,48 +180,48 @@ footer {
   transition: width 0.3s ease;
 }
 
-.redes{
+.redes {
   list-style: none;
 }
-.link_instagram{
+
+.link_instagram {
   text-decoration: none;
   color: #FF5C3F;
 }
 
-.link_facebook{
+.link_facebook {
   text-decoration: none;
   color: #1877F2;
 }
 
-.link_whatsapp{
+.link_whatsapp {
   text-decoration: none;
   color: #25D366;
 }
 
-.link_linkedin{
+.link_linkedin {
   text-decoration: none;
   color: #0A66C2;
 } 
 
-.iconoins{
+.iconoins {
   width: 20px;
   position: relative;
   right: 8px;
 }
 
-.iconoface{
+.iconoface {
   width: 20px;
   position: relative;
   right: 8px;
 }
 
-.iconowha{
+.iconowha {
   width: 20px;
   position: relative;
   right: 8px;
   top: 2px;
 }
-
 
 @media (max-width: 1024px) {
   .sidebar {
