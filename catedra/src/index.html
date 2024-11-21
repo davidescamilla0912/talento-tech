@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script src="/catedra/src/hola.js"></script>
+    <script src="/catedra/scripts.js" defer></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <title>DEVCAPS</title>
 </head>
@@ -23,44 +23,44 @@
     <div class="main-content">
         <section id="inicio" class="section">
             <p><strong>Bienvenido a DEVCAPS, una tienda donde encontrarás todo tipo de estilos de gorras y más.</strong></p>
-            <img src="imagenes/gorra.webp" alt="Gorra Principal" style="width: 900px;" height="450px">
+            <img class="gorra-principal" src="/catedra/imagenes/gorra.webp" alt="Gorra Principal">
         </section>
 
         <section id="productos" class="section">
             <h2>Productos</h2>
             <div class="contenedor-productos">
                 <div class="productos">
-                    <img src="imagenes/1.webp" alt="Gorra Gallo">
+                    <img src="/catedra/imagenes/1.webp" alt="Gorra Gallo">
                     <h3>Gorra Gallo</h3>
                     <p>250000$</p>
                     <button class="producto-agregar">Agregar</button>
                 </div>
                 <div class="productos">
-                    <img src="imagenes/2.webp" alt="Gorra Pantera">
+                    <img src="/catedra/imagenes/2.webp" alt="Gorra Pantera">
                     <h3>Gorra Pantera</h3>
                     <p>250000$</p>
                     <button class="producto-agregar">Agregar</button>
                 </div>
                 <div class="productos">
-                    <img src="imagenes/3.webp" alt="Gorra Rana">
+                    <img src="/catedra/imagenes/3.webp" alt="Gorra Rana">
                     <h3>Gorra Rana</h3>
                     <p>350000$</p>
                     <button class="producto-agregar">Agregar</button>
                 </div>
                 <div class="productos">
-                    <img src="imagenes/1.webp" alt="Gorra Gallo">
+                    <img src="/catedra/imagenes/1.webp" alt="Gorra Gallo">
                     <h3>Gorra Gallo</h3>
                     <p>250000$</p>
                     <button class="producto-agregar">Agregar</button>
                 </div>
                 <div class="productos">
-                    <img src="imagenes/2.webp" alt="Gorra Pantera">
+                    <img src="/catedra/imagenes/2.webp" alt="Gorra Pantera">
                     <h3>Gorra Pantera</h3>
                     <p>250000$</p>
                     <button class="producto-agregar">Agregar</button>
                 </div>
                 <div class="productos">
-                    <img src="imagenes/3.webp" alt="Gorra Rana">
+                    <img src="/catedra/imagenes/3.webp" alt="Gorra Rana">
                     <h3>Gorra Rana</h3>
                     <p>350000$</p>
                     <button class="producto-agregar">Agregar</button>
@@ -69,18 +69,20 @@
 <br>
             
             <div class="contenedor-productos">
-                <h3 class="titulo-principal">Descuentos</h3>
+                <h3 class="titulo-principal">Descuentos</h3> <br>
+               
+            
                 
                 <div class="productos">
-                    <img class="imagenes" src="imagenes/w merch 1.webp" alt="">
+                    <img class="imagenes" src="/catedra/imagenes/w merch 1.webp" alt="">
                     <h3 class="producto-titulo">Gorra Edición Especial</h3>
                     <p class="producto-precio"> Antes: <del>$200000</del> <br> Ahora: <strong>$180000</strong></p>
                     <button class="producto-agregar">Agregar</button>
                 </div>
                 <div class="productos">
-                    <img class="imagenes" src="imagenes/w merch 2.webp" alt="">
+                    <img class="imagenes" src="/catedra/imagenes/w merch 2.webp" alt="">
                     <h3 class="producto-titulo">Bandana W Merch</h3>
-                    <p class="producto-precio">250000$</p>
+                    <p class="producto-precio">Antes: <del>$180000</del> <br> Ahora: <strong>$100000</strong></p>
                     <button class="producto-agregar">Agregar</button>
                 </div>
             </div>
@@ -111,9 +113,9 @@
                     <legend><b>Redes Sociales</b></legend>
                     <footer>
                         <ul class="redes">
-                            <li><a class="link_instagram" href="https://www.instagram.com/" target="_blank"> <img src="imagenes/instagram.png" alt="Instagram" class="iconoins">Instagram</a></li>
-                            <li><a class="link_facebook" href="https://www.facebook.com/" target="_blank"><img src="imagenes/facebook.png" alt="Facebook" class="iconoface">Facebook</a></li>
-                            <li><a class="link_whatsapp" href="https://api.whatsapp.com/send?phone=573197083230" target="_blank"><img src="imagenes/social.png" alt="Whatsapp" class="iconowha">Whatsapp</a></li>
+                            <li><a class="link_instagram" href="https://www.instagram.com/" target="_blank"> <img src="/catedra/imagenes/instagram.png" alt="Instagram" class="iconoins">Instagram</a></li>
+                            <li><a class="link_facebook" href="https://www.facebook.com/" target="_blank"><img src="/catedra/imagenes/facebook.png" alt="Facebook" class="iconoface">Facebook</a></li>
+                            <li><a class="link_whatsapp" href="https://api.whatsapp.com/send?phone=573197083230" target="_blank"><img src="/catedra/imagenes/social.png" alt="Whatsapp" class="iconowha">Whatsapp</a></li>
                         </ul> 
                     </footer>
                 </fieldset>
@@ -141,7 +143,7 @@
 
         <section id="login" class="section">
             <h2 class="login-usuario">Login del usuario</h2>
-            <img class="login" src="imagenes/pngwing.com.png" alt="Login">
+            <img class="login" src="/catedra/imagenes/pngwing.com.png" alt="Login">
             <form>
                 <li class="usuarios">
                     <label class="usuario" for="usuario">Nombre</label><br>
