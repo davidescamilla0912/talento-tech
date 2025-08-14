@@ -9,11 +9,14 @@
     <title>DEVCAPS</title>
 </head>
 <body>
-    <h1>DEVCAPS</h1>
+    <div class="contenedor-h1">
+        <h1>DEVCAPS</h1>
+    </div>
+    
 
     <div class="sidebar">
+        <a href="javascript:void(0)" onclick="mostrarSeccion('login')">Login</a>
         <a href="javascript:void(0)" onclick="mostrarSeccion('inicio')">Inicio</a>
-        <a href="javascript:void(0)" onclick="mostrarSeccion('login')"><i class="bi bi-file-person-fill"></i> Login</a>
         <a href="javascript:void(0)" onclick="mostrarSeccion('productos')">Productos</a>
         <a href="javascript:void(0)" onclick="mostrarSeccion('acerca')">Acerca de nosotros</a>
         <a href="javascript:void(0)" onclick="mostrarSeccion('contacto')">Contacto</a>
@@ -108,9 +111,9 @@
                     <button class="producto-agregar">Agregar</button>
                 </div>
                 <div class="productos">
-                    <img class="imagenes" src="/catedra/imagenes/w merch 2.webp" alt="Bandana W Merch">
-                    <h3>Bandana W Merch</h3>
-                    <p>250000$</p>
+                    <img class="imagenes" src="/catedra/imagenes/777modify.jpg" alt="Sudadera 777">
+                    <h3>Sudadera 777</h3>
+                    <p>60000$</p>
                     <button class="producto-agregar">Agregar</button>
                 </div>
             </div>
@@ -165,24 +168,67 @@
             </div>
         </section>
 
-     
+        
         <section id="login" class="section">
-            <fieldset class="co">
-                <div class="login-box">
-                    <h2>Iniciar Sesión</h2>
-                    <form>
-                        <div class="form-group">
-                            <label for="username">Usuario</label>
+            <div class="login-box">
+                <h2>Iniciar Sesión</h2>
+                <form>
+                    <div class="form-group input-icon">
+                        <label for="username">Usuario</label>
+                        <div class="input-wrapper">
+                            <i class="bi bi-person"></i>
                             <input type="text" id="username" placeholder="Escribe tu usuario" required>
                         </div>
-                        <div class="form-group">
-                            <label for="password">Contraseña</label>
+                    </div>
+                    <div class="form-group input-icon">
+                        <label for="password">Contraseña</label>
+                        <div class="input-wrapper">
+                            <i class="bi bi-lock"></i>
                             <input type="password" id="password" placeholder="Escribe tu contraseña" required>
                         </div>
-                        <button type="submit" class="login-btn">Ingresar</button>
-                    </form>
-                </div>
-            </fieldset>
+                    </div>
+                    <button type="submit" class="login-btn">Ingresar</button>
+                    <button type="button" class="register-btn" onclick="mostrarSeccion('registro')">Registrarse</button>
+                </form>
+            </div>
+        </section>
+
+        <section id="registro" class="section" style="display: none;">
+            <div class="register-box">
+                <h2>Registrarse</h2>
+                <form id="registerForm">
+                    <div class="form-group input-icon">
+                        <label for="regUsername">Usuario</label>
+                        <div class="input-wrapper">
+                            <i class="bi bi-person"></i>
+                            <input type="text" id="regUsername" placeholder="Elige un nombre de usuario" required>
+                        </div>
+                    </div>
+                    <div class="form-group input-icon">
+                        <label for="regPassword">Contraseña</label>
+                        <div class="input-wrapper">
+                            <i class="bi bi-lock"></i>
+                            <input type="password" id="regPassword" placeholder="Elige una contraseña" required>
+                        </div>
+                    </div>
+                     <div class="form-group input-icon">
+                        <label for="regConfirmPassword">Confirmar Contraseña</label>
+                        <div class="input-wrapper">
+                            <i class="bi bi-lock"></i>
+                            <input type="password" id="regConfirmPassword" placeholder="Confirma tu contraseña" required>
+                        </div>
+                    </div>
+                    <div class="form-group input-icon">
+                        <label for="regEmail">Correo Electrónico</label>
+                        <div class="input-wrapper">
+                            <i class="bi bi-envelope"></i>
+                            <input type="email" id="regEmail" placeholder="Ingresa tu correo" required>
+                        </div>
+                    </div>
+                    <button type="submit" class="register-btn">Crear Cuenta</button>
+                    <button type="button" class="login-btn" onclick="mostrarSeccion('login')">Ya tengo cuenta</button>
+                </form>
+            </div>
         </section>
 
         <section id="carrito" class="section">

@@ -14,18 +14,17 @@ h1 {
 }
 
 .sidebar {
-  position: sticky;
-  z-index: 1000;
-  width: 20%; 
-  min-width: 200px; 
-  max-width: 300px; 
+  position: fixed;
+  width: 20%;
+  min-width: 200px;
+  max-width: 300px;
   height: 100vh;
   background-color: #000000;
-  position: fixed;
   top: 0;
   left: 0;
   padding-top: 20px;
-  overflow-y: auto; 
+  overflow-y: auto;
+  z-index: 1000;
 }
 
 .sidebar a {
@@ -41,7 +40,7 @@ h1 {
 }
 
 .main-content {
-  margin-left: 20%; 
+  margin-left: 20%;
   padding: 20px;
 }
 
@@ -61,9 +60,9 @@ button:hover {
 }
 
 .section {
-  margin-top: 20px;
-  padding: 20px;
-  border: 1px solid #ddd;
+  margin-top: 50px;
+  padding: 10px;
+  
 }
 
 section {
@@ -78,7 +77,7 @@ section.active {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
-  justify-content: center; 
+  justify-content: center;
 }
 
 .productos {
@@ -86,9 +85,10 @@ section.active {
   border: 1px solid #ddd;
   padding: 10px;
   text-align: center;
-  flex: 1 1 calc(25% - 40px); 
-  max-width: 300px; 
-  box-sizing: border-box; 
+  flex: 1 1 calc(25% - 40px);
+  max-width: 300px;
+  box-sizing: border-box;
+  object-fit: cover;
 }
 
 .productos img {
@@ -129,7 +129,7 @@ footer {
   left: 340px;
   list-style: none;
   margin: 10px;
-}           
+}
 
 .boton {
   position: relative;
@@ -163,13 +163,13 @@ footer {
 }
 
 .usu:hover {
-  background-color: #ffd8d8; 
-  border-color: #b40505; 
+  background-color: #ffd8d8;
+  border-color: #b40505;
 }
 
 .con:hover {
-  background-color: #ffd8d8; 
-  border-color: #b40505; 
+  background-color: #ffd8d8;
+  border-color: #b40505;
 }
 
 .gorra-principal {
@@ -204,7 +204,7 @@ footer {
 .link_linkedin {
   text-decoration: none;
   color: #0A66C2;
-} 
+}
 
 .iconoins {
   width: 20px;
@@ -225,9 +225,10 @@ footer {
   top: 2px;
 }
 
+/* Media queries para hacer responsive */
 @media (max-width: 1024px) {
   .sidebar {
-    width: 25%; 
+    width: 25%;
   }
 
   .main-content {
@@ -239,7 +240,7 @@ footer {
   }
 
   .productos {
-    flex: 1 1 calc(50% - 20px); 
+    flex: 1 1 calc(50% - 20px);
   }
 }
 
@@ -255,7 +256,30 @@ footer {
   }
 
   .productos {
-    flex: 1 1 calc(100% - 20px); 
+    flex: 1 1 calc(100% - 20px);
+  }
+
+  .login {
+    margin: 20px auto;
+    width: 90%;
+    max-width: 400px;
+  }
+
+  .usuarios, .contraseñas {
+    position: static;
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  .boton {
+    position: static;
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  .usu, .con {
+    width: 100%;
+    box-sizing: border-box;
   }
 }
 
@@ -299,12 +323,8 @@ footer {
 }
 
 #carrito {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 20px;
-  background-color: #f9f9f9;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  overflow-x: auto;
 }
 
 #carrito h2 {
@@ -321,6 +341,7 @@ footer {
 }
 
 table {
+  min-width: 600px;
   width: 100%;
   border-collapse: collapse;
   margin: 20px 0;
@@ -351,65 +372,118 @@ table tbody tr:nth-child(even) {
   margin-bottom: 10px;
 }
 
-/* Estilo para login */
-.login-container {
-  position:fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.8);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  display: none; 
-}
-
 .login-box {
-  background-color: #1f1f1f;
-  padding: 30px 40px;
-  border-radius: 10px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
-  text-align: center;
-  width: 300px;
+  background: #181818;
+  padding: 90px;
+  border-radius: 100px;
+  box-shadow: 0 6px 32px rgba(255,0,0,0.15), 0 1.5px 8px rgba(0,0,0,0.5);
+  width: 90%;
+  max-width: 400px;
+  margin: 20px auto;
+  height: 100%;
 }
 
 .login-box h2 {
-  color: #ff0000;
-  margin-bottom: 20px;
-  font-size: 24px;
+  color: #ff2222;
+  margin-bottom: 24px;
+  font-size: 2.2rem;
+  font-weight: bold;
+  letter-spacing: 1px;
 }
 
 .form-group {
-  margin-bottom: 15px;
-  text-align: left;
-}
-
-.form-group label {
-  display: block;
-  font-size: 14px;
-  color: #ddd;
-  margin-bottom: 5px;
-}
-
-.form-group input {
   width: 100%;
-  padding: 10px;
-  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+.input-icon .input-wrapper {
+  display: flex;
+  align-items: center;
+  background: #111;
+  border-radius: 6px;
+  border: 1.5px solid #222;
+  padding: 0 10px;
+  transition: border 0.2s, box-shadow 0.2s;
+}
+
+.input-icon .input-wrapper:focus-within {
+  border: 1.5px solid #ff2222;
+  box-shadow: 0 0 0 2px #ff2222aa;
+}
+
+.input-icon i {
+  color: #ff2222;
+  font-size: 1.3rem;
+  margin-right: 8px;
+}
+
+.input-icon input {
+  background: transparent;
   border: none;
-  border-radius: 5px;
-  background-color: #333;
+  outline: none;
+  color: #fff;
+  font-size: 1.1rem;
+  padding: 12px 0;
+  width: 100%;
+  transition: color 0.2s;
+}
+
+.input-icon input::placeholder {
+  color: #bbb;
+  opacity: 1;
+}
+
+.input-icon label {
   color: #fff;
 }
 
-.form-group input:focus {
-  outline: none;
-  border: 1px solid #ff0000;
+.login-btn {
+  width: 100%;
+  padding: 12px 0;
+  background: linear-gradient(90deg, #ff2222 60%, #b40505 100%);
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 8px rgba(255,0,0,0.10);
+  transition: background 0.2s, color 0.2s;
 }
 
-.btn-login {
-  display: inline-block;
-  width: 100
+.login-btn:hover {
+  background: #fff;
+  color: #b40505;
+  border: 1.5px solid #b40505;
+}
+
+.register-btn {
+  width: 100%;
+  padding: 12px 0;
+  background: #181818;
+  color: #ff2222;
+  border: 1.5px solid #ff2222;
+  border-radius: 6px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-bottom: 5px;
+  transition: background 0.2s, color 0.2s;
+}
+
+.register-btn:hover {
+  background: #ff2222;
+  color: #fff;
+}
+
+@media (max-width: 600px) {
+  .login-box {
+    padding: 18px 6vw 18px 6vw;
+    max-width: 98vw;
+  }
+  .login-box h2 {
+    font-size: 1.5rem;
+  }
 }
 
 .carrito-imagen {
